@@ -1,0 +1,111 @@
+.boxgrid{
+    text-align: center;
+    margin: 150px;
+    display: grid;
+    gap: 80px 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    top: -280px;
+    @media (max-width:$PhoneWidth) {
+        display: inline;
+        padding: 10px;
+        top: 30px;
+       
+    }
+    @media (min-width:$PhoneWidth) and (max-width:$DesktopWidth) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        top: 0
+    }
+
+    div{
+        width:100%;
+        height: 190px;
+        background: $DarkDesaturatedBlueCardBG;
+        border-radius: 5px;
+        padding: 40px 0 20px 0;
+        transition: .3s ease all;
+        @media (max-width:$PhoneWidth) {
+            margin-bottom: 20px;
+
+            
+        }
+
+        body.ligth &{
+            background: $LightGrayishBlueCardBG;
+        }
+        
+        h1{
+            color: $WhiteText;
+            font-size: 60px;
+            margin-bottom:0px;
+            margin-top: 25px;
+            transition: .3s ease all;
+            body.ligth & {
+                color: $VeryDarkBlueText;}
+        }
+
+        h3{
+            color: $DesaturatedBlueText;
+            font-weight: 400;
+            margin-top: 0px;
+            margin-bottom:30px;
+            transition: .3s ease all;
+            body.ligth & {
+                color: $DarkGrayishBlueText;}
+        }
+
+        p{
+            color: $DesaturatedBlueText;
+            font-weight: 700;
+            font-size: 15px;
+            margin-top: 0;
+            margin-bottom:0px;
+            transition: .3s ease all;
+            body.ligth & {
+                color: $DarkGrayishBlueText;}
+            i{
+                padding: 0 10px;
+                font-size: 20px;
+            }
+        }
+        img{
+            height: 20px;
+            padding: 0 10px;
+                    
+        }
+    }
+
+    .facebookbox{
+        border-top: $Facebook 4px solid;
+    }
+    .twitterbox{
+        border-top: $Twitter 4px solid;
+    }
+    .instagrambox{
+        border-top: 4px solid transparent; 
+        border-radius: 5px;
+        border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+     }
+    .youtubebox{
+        border-top: $YouTube 4px solid;
+    }
+
+    .up{
+        color: $LimeGreen !important;
+    }
+    .down{
+        color: $BrightRed !important;
+    }
+
+    .facebook{
+        color: $Facebook;
+    }
+    .twitter{
+        color: $Twitter;
+    }
+
+    .youtube{
+        color: $YouTube;
+    }
+}

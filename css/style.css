@@ -1,0 +1,348 @@
+/*Dark Theme*/
+/*Ligth Theme*/
+/*Primary*/
+/*Primary*/
+/*toggle*/
+/*Media Queries*/
+.switch {
+  background: orange;
+  border-radius: 1000px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: #343058;
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  padding: 10px 150px 50px 150px;
+  position: relative;
+  height: 200px;
+  background: #1f212e;
+  transition: 0.3s ease all;
+}
+@media (max-width: 375px) {
+  header {
+    display: inline;
+    padding: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 375px) and (max-width: 1440px) {
+  header {
+    display: inline;
+    text-align: center;
+  }
+}
+body.ligth header {
+  background-color: #f5f7ff;
+}
+header h2 {
+  color: white;
+  transition: 0.3s ease all;
+}
+body.ligth header h2 {
+  color: #1e202a;
+}
+header h5 {
+  color: #8b97c6;
+  transition: 0.3s ease all;
+}
+body.ligth header h5 {
+  color: #63687e;
+}
+header .checkbox {
+  display: inline-block;
+  position: absolute;
+  right: 150px;
+}
+@media (max-width: 375px) {
+  header .checkbox {
+    display: inline-block;
+    position: relative;
+    right: inherit;
+    left: 40%;
+    border-top: 2px solid #8b97c6;
+  }
+}
+@media (min-width: 375px) and (max-width: 1440px) {
+  header .checkbox {
+    display: inline;
+    right: inherit;
+    position: relative;
+    text-align: center;
+  }
+  header .checkbox button {
+    margin: auto;
+  }
+}
+
+.boxgrid {
+  text-align: center;
+  margin: 150px;
+  display: grid;
+  gap: 80px 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  position: relative;
+  top: -280px;
+}
+@media (max-width: 375px) {
+  .boxgrid {
+    display: inline;
+    padding: 10px;
+    top: 30px;
+  }
+}
+@media (min-width: 375px) and (max-width: 1440px) {
+  .boxgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    top: 0;
+  }
+}
+.boxgrid div {
+  width: 100%;
+  height: 190px;
+  background: #252a41;
+  border-radius: 5px;
+  padding: 40px 0 20px 0;
+  transition: 0.3s ease all;
+}
+@media (max-width: 375px) {
+  .boxgrid div {
+    margin-bottom: 20px;
+  }
+}
+body.ligth .boxgrid div {
+  background: #f0f2fa;
+}
+.boxgrid div h1 {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 0px;
+  margin-top: 25px;
+  transition: 0.3s ease all;
+}
+body.ligth .boxgrid div h1 {
+  color: #1e202a;
+}
+.boxgrid div h3 {
+  color: #8b97c6;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  transition: 0.3s ease all;
+}
+body.ligth .boxgrid div h3 {
+  color: #63687e;
+}
+.boxgrid div p {
+  color: #8b97c6;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  transition: 0.3s ease all;
+}
+body.ligth .boxgrid div p {
+  color: #63687e;
+}
+.boxgrid div p i {
+  padding: 0 10px;
+  font-size: 20px;
+}
+.boxgrid div img {
+  height: 20px;
+  padding: 0 10px;
+}
+.boxgrid .facebookbox {
+  border-top: #198ff5 4px solid;
+}
+.boxgrid .twitterbox {
+  border-top: #1ca0f2 4px solid;
+}
+.boxgrid .instagrambox {
+  border-top: 4px solid transparent;
+  border-radius: 5px;
+  border-image: linear-gradient(to right, #fdc468, #df4996) 1;
+}
+.boxgrid .youtubebox {
+  border-top: #c4032a 4px solid;
+}
+.boxgrid .up {
+  color: #1db489 !important;
+}
+.boxgrid .down {
+  color: #dc414c !important;
+}
+.boxgrid .facebook {
+  color: #198ff5;
+}
+.boxgrid .twitter {
+  color: #1ca0f2;
+}
+.boxgrid .youtube {
+  color: #c4032a;
+}
+
+.overview {
+  padding: 10px 150px 50px 150px;
+  position: relative;
+  top: -430px;
+}
+@media (max-width: 375px) {
+  .overview {
+    display: inline;
+    top: 10px;
+  }
+}
+@media (min-width: 375px) and (max-width: 1440px) {
+  .overview {
+    display: inline;
+    top: 0px;
+  }
+}
+.overview h2 {
+  color: white;
+  transition: 0.3s ease all;
+}
+body.ligth .overview h2 {
+  color: #63687e;
+}
+.overview .overviewboxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px 30px;
+}
+@media (max-width: 375px) {
+  .overview .overviewboxes {
+    display: inline;
+  }
+}
+@media (min-width: 375px) and (max-width: 1440px) {
+  .overview .overviewboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.overview .overviewboxes .overviewbox {
+  width: 100%;
+  height: 120px;
+  background: #252a41;
+  border-radius: 5px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  transition: 0.3s ease all;
+}
+@media (max-width: 375px) {
+  .overview .overviewboxes .overviewbox {
+    margin-bottom: 10px;
+  }
+}
+body.ligth .overview .overviewboxes .overviewbox {
+  background: #f0f2fa;
+}
+.overview .overviewboxes .overviewbox h4 {
+  color: #8b97c6;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline;
+  padding-left: 20px;
+  padding-top: 30px;
+  margin: 0;
+  transition: 0.3s ease all;
+}
+body.ligth .overview .overviewboxes .overviewbox h4 {
+  color: #63687e;
+}
+.overview .overviewboxes .overviewbox i {
+  display: inline;
+  font-size: 25px;
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 25px;
+}
+.overview .overviewboxes .overviewbox h2 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  transition: 0.3s ease all;
+}
+body.ligth .overview .overviewboxes .overviewbox h2 {
+  color: #63687e;
+}
+.overview .overviewboxes .overviewbox p {
+  text-align: right;
+  padding-right: 30px;
+  transition: 0.3s ease all;
+}
+body.ligth .overview .overviewboxes .overviewbox p {
+  color: #63687e;
+}
+.overview .overviewboxes .overviewbox p i {
+  padding-right: 10px;
+}
+.overview .overviewboxes .overviewbox img {
+  height: 25px;
+  padding-top: 25px;
+  padding-left: 90px;
+}
+.overview .overviewboxes .overviewbox .up {
+  color: #1db489 !important;
+}
+.overview .overviewboxes .overviewbox .down {
+  color: #dc414c !important;
+}
+.overview .overviewboxes .overviewbox .facebook {
+  color: #198ff5;
+}
+.overview .overviewboxes .overviewbox .twitter {
+  color: #1ca0f2;
+}
+.overview .overviewboxes .overviewbox .youtube {
+  color: #c4032a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: inter, sans-serif;
+  background: #1e202a;
+  transition: 0.3s ease all;
+}
+body.ligth {
+  background: white;
+}
+
+/*# sourceMappingURL=style.css.map */

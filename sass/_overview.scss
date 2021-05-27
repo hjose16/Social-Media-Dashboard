@@ -1,0 +1,124 @@
+.overview{
+    padding: 10px 150px 50px 150px;
+    position: relative;
+    top: -430px;
+    @media (max-width:$PhoneWidth) {
+        display: inline;
+        top: 10px
+
+        
+    }
+    @media (min-width:$PhoneWidth) and (max-width:$DesktopWidth) {
+        display: inline;
+        top: 0px
+    }
+    h2{
+        color: $WhiteText;
+        transition: .3s ease all;
+        body.ligth & {
+            color: $DarkGrayishBlueText;}
+    }
+    .overviewboxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px 30px;
+        @media (max-width:$PhoneWidth) {
+            display: inline;
+        }
+        @media (min-width:$PhoneWidth) and (max-width:$DesktopWidth) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .overviewbox{
+            width:100%;
+            height: 120px;
+            background: $DarkDesaturatedBlueCardBG;
+            border-radius: 5px;
+            padding:  0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+            transition: .3s ease all;
+            @media (max-width:$PhoneWidth) {
+                margin-bottom: 10px;
+            }
+
+
+
+        body.ligth &{
+            background: $LightGrayishBlueCardBG;}
+           
+
+            h4{
+                color: $DesaturatedBlueText;
+                font-size: 14px;
+                font-weight: 700;
+                display: inline;  
+                padding-left: 20px;
+                padding-top: 30px; 
+                margin: 0;
+                transition: .3s ease all;
+                body.ligth & {
+                    color: $DarkGrayishBlueText;}                          
+ 
+            }
+            i{
+                display: inline;
+                font-size: 25px;
+                text-align: right;
+                padding-right: 30px;
+                padding-top: 25px;
+
+
+
+            }
+            h2{
+                padding-left: 20px;
+                padding-bottom: 20px;
+                transition: .3s ease all;
+                body.ligth & {
+                    color: $DarkGrayishBlueText;}
+            }
+
+            p{
+                text-align: right;
+                padding-right: 30px;
+                transition: .3s ease all;
+                body.ligth & {
+                    color: $DarkGrayishBlueText;}
+
+                i{
+                    padding-right: 10px;
+                }
+              
+            }
+
+                    img{
+            height: 25px;
+            padding-top: 25px;
+            padding-left: 90px;
+
+        }
+            .up{
+                color: $LimeGreen !important;
+            }
+            .down{
+                color: $BrightRed !important;
+            }
+            
+                    .facebook{
+                    color: $Facebook;
+                    }
+                    .twitter{
+                    color: $Twitter;
+                }
+
+                .youtube{
+                    color: $YouTube;
+                }
+                    }
+                }
+
+
+}

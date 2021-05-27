@@ -1,0 +1,55 @@
+header{
+    display: flex;
+    padding: 10px 150px 50px 150px;
+
+    position: relative;
+    height: 200px;
+    background: $VeryDarkBlueTopBG;
+    transition: .3s ease all;
+    @media (max-width:$PhoneWidth) {
+        display: inline; 
+        padding: 20px; 
+        text-align: center;    
+    }
+    @media (min-width:$PhoneWidth) and (max-width:$DesktopWidth) {
+        display: inline;
+        text-align: center;
+    }
+
+    body.ligth & {
+        background-color: $VeryPaleBlueTopBG;
+    }
+    h2{
+        color: $WhiteText;
+        transition: .3s ease all;
+        body.ligth & {
+            color: $VeryDarkBlueText;}
+    }
+    h5{
+        color: $DesaturatedBlueText;
+        transition: .3s ease all;
+        body.ligth & {
+            color: $DarkGrayishBlueText;}
+    }
+    .checkbox{
+        display: inline-block;
+        position: absolute;
+        right: 150px;
+        @media (max-width:$PhoneWidth) {
+            display: inline-block;
+            position: relative;
+            right: inherit;
+            left: 40%;
+            border-top: 2px solid $DesaturatedBlueText;
+        }
+        @media (min-width:$PhoneWidth) and (max-width:$DesktopWidth) {
+            display: inline;
+            right: inherit;
+            position: relative;
+            text-align: center;
+            button{
+                margin: auto;
+            }
+        }
+    }
+}
